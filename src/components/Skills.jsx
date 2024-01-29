@@ -1,15 +1,22 @@
 import { useContext } from 'react';
 import ThemeAndLangContext from '../context/ThemeAndLangContext.jsx';
 import { skills, tech } from '../data/skills-tech.js';
+import { AiOutlineCode } from 'react-icons/ai';
+import { RiCodeSSlashLine } from 'react-icons/ri';
 import '../css/Skills.css';
 const Skills = () => {
 	const { theme, texts } = useContext(ThemeAndLangContext);
-	console.log('img:', skills);
-	console.log('img:', tech);
+	// console.log('img:', skills);
+	// console.log('img:', tech);
 	return (
 		<div className='skills'>
 			<div className='container-skills-technologies'>
-				<h3>{texts.mySkills}</h3>
+				<h3>
+					<span className='skill-icon-text'>
+						<RiCodeSSlashLine />
+						{texts.mySkills}
+					</span>
+				</h3>
 				<div className='my-skills'>
 					{skills.map((item) => (
 						<div
@@ -25,7 +32,12 @@ const Skills = () => {
 						</div>
 					))}
 				</div>
-				<h3>{texts.myTechs}</h3>
+				<h3>
+					<span className='skill-icon-text'>
+						<AiOutlineCode />
+						{texts.myTechs}
+					</span>
+				</h3>
 				<div className='my-technolgies'>
 					{tech.map((item) => (
 						<div
