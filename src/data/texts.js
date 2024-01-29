@@ -21,6 +21,6 @@ export const translations = {
 		mySkills: 'Mis Habilidades',
 		myTechs: 'Mis Tecnologias',
 		projects: 'Mis Proyectos',
-		contact: 'Contactame',
+		contact: 'Contáctame',
 	},
 };

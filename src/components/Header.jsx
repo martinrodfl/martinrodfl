@@ -34,7 +34,7 @@ const Nav = () => {
 			</a>
 			<a
 				className='tab'
-				href=''
+				href='#contact'
 			>
 				<span className='skill-icon-text'>
 					<MdOutlineEmail />

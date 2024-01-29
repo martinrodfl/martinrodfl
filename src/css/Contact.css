@@ -1,0 +1,22 @@
+.contact {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 99svh;
+}
+
+.container-contacts {
+  display: flex;
+  width: 100%;
+  min-height: 98svh;
+  justify-content: center;
+  padding: 5px;
+}
+
+.contact-title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
