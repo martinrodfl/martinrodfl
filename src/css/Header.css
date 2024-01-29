@@ -16,17 +16,17 @@
 
 .download-btn {
   padding: 5px 10px;
+  margin: 0 auto;
   border: 1px solid #0ec18580;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  min-width: 190px;
+  width: 190px;
   display: flex;
   justify-content: center;
   gap: 10px;
   font-size: var(--font-size-base);
-  opacity: .5;
-  /* margin-top: 30px; */
+  opacity: .8;
 }
 
 .download-icon {
@@ -128,6 +128,30 @@
   filter: drop-shadow(10px 40px 15px rgba(0, 0, 0, 0.603));
 }
 
+
+
+
+/** ------------ NAV --------------- **/
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-width: 25%;
+  min-height: 100%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
 /** ---------------MEDIAQUERIES--------------------------------------- */
 @media (577px <=width < 768px) {}
 
@@ -146,23 +170,8 @@
   .vibrate {
     font-size: 36px;
   }
-}
 
-
-/** ------------ NAV --------------- **/
-
-.nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.tab {
-  text-decoration: none;
-  width: 30%;
-  height: 40px;
-  text-align: center;
-  line-height: 2;
-  border-radius: 4px;
+  .tab {
+    font-size: 23px;
+  }
 }

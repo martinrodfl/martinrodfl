@@ -9,6 +9,7 @@ export const translations = {
 		mySkills: 'My Skills',
 		myTechs: 'My Technologies',
 		projects: 'My Projects',
+		contact: 'Contact Me',
 	},
 	es: {
 		hello: 'Hola a todos ',
@@ -20,5 +21,6 @@ export const translations = {
 		mySkills: 'Mis Habilidades',
 		myTechs: 'Mis Tecnologias',
 		projects: 'Mis Proyectos',
+		contact: 'Contactame',
 	},
 };

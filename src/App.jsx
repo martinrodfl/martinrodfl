@@ -10,7 +10,10 @@ function App() {
 
 	return (
 		<div className={theme}>
-			<div className='layout'>
+			<div
+				className='layout'
+				id='layout'
+			>
 				<Header />
 				<main>
 					<Skills />
