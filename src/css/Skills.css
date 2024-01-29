@@ -27,7 +27,7 @@
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .skill,
@@ -36,8 +36,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 87px;
-  height: 87px;
+  min-width: 50px;
+  height: 50px;
 }
 
 .skill>span,
@@ -51,8 +51,8 @@
 .skills-tech-img {
   display: flex;
   flex-direction: column;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -69,7 +69,7 @@
 
   .my-skills,
   .my-technolgies {
-    height: 40vh;
+    /* height: 40vh; */
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
