@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 95svh;
+  min-height: 99svh;
 }
 
 .container-skills-technologies {
@@ -15,11 +15,9 @@
   padding: 5px;
   min-height: 90vh;
   gap: 40px;
+
 }
 
-.container-skills-technologies>span {
-  color: green;
-}
 
 .my-skills,
 .my-technolgies {

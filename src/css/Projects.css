@@ -1,0 +1,24 @@
+.projects {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 99svh;
+  /* border: 1px solid violet; */
+}
+
+.container-projects {
+  display: flex;
+  width: 100%;
+  min-height: 98svh;
+  justify-content: center;
+  padding: 5px;
+  /* border: 1px solid red; */
+}
+
+.project-title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}

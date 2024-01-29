@@ -6,10 +6,11 @@ import { RiCodeSSlashLine } from 'react-icons/ri';
 import '../css/Skills.css';
 const Skills = () => {
 	const { theme, texts } = useContext(ThemeAndLangContext);
-	// console.log('img:', skills);
-	// console.log('img:', tech);
 	return (
-		<div className='skills'>
+		<div
+			className='skills'
+			id='skills'
+		>
 			<div className='container-skills-technologies'>
 				<h3>
 					<span className='skill-icon-text'>

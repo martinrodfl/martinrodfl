@@ -7,6 +7,30 @@ import { IoEyeOutline } from 'react-icons/io5';
 import man from '../assets/man.png';
 import '../css/Header.css';
 
+const Nav = () => {
+	return (
+		<div className='nav'>
+			<a
+				className='tab'
+				href='#skills'
+			>
+				Skills
+			</a>
+			<a
+				className='tab'
+				href='#projects'
+			>
+				Projects
+			</a>
+			<a
+				className='tab'
+				href=''
+			>
+				Contact
+			</a>
+		</div>
+	);
+};
 const Header = () => {
 	const { texts, lang } = useContext(ThemeAndLangContext);
 
@@ -14,7 +38,23 @@ const Header = () => {
 		<div className='header'>
 			<div className='header-switches'>
 				<ThemeSwitch />
-
+				<a
+					className='download-btn'
+					href={
+						lang === 'es'
+							? 'https://drive.google.com/file/d/1NCWH_76Iyo1MPkLtbmbASBhKvvNetW5i/view?usp=sharing'
+							: 'https://drive.google.com/file/d/1wMOwgwX2zGGnQnE_xZvDVaBc_77OClUx/view?usp=sharing'
+					}
+					target='_blank'
+					rel='noreferrer'
+				>
+					<span className='download-icon'>
+						<IoEyeOutline />
+					</span>{' '}
+					<span>
+						{texts.view} {texts.resume}
+					</span>
+				</a>
 				<LangSwitch />
 			</div>
 			<div className='header-main'>
@@ -43,24 +83,8 @@ const Header = () => {
 						/>
 					</div>
 				</div>
-				<a
-					className='download-btn'
-					href={
-						lang === 'es'
-							? 'https://drive.google.com/file/d/1NCWH_76Iyo1MPkLtbmbASBhKvvNetW5i/view?usp=sharing'
-							: 'https://drive.google.com/file/d/1wMOwgwX2zGGnQnE_xZvDVaBc_77OClUx/view?usp=sharing'
-					}
-					target='_blank'
-					rel='noreferrer'
-				>
-					<span className='download-icon'>
-						<IoEyeOutline />
-					</span>{' '}
-					<span>
-						{texts.view} {texts.resume}
-					</span>
-				</a>
 			</div>
+			<Nav />
 		</div>
 	);
 };

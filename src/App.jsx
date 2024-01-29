@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import Header from './components/Header.jsx';
 import ThemeAndLangContext from './context/ThemeAndLangContext.jsx';
-
+import Skills from './components/Skills.jsx';
+import Projects from './components/Projects.jsx';
 import './App.css';
 import './css/main.css';
-import Skills from './components/Skills.jsx';
 function App() {
 	const { theme } = useContext(ThemeAndLangContext);
 
@@ -14,6 +14,7 @@ function App() {
 				<Header />
 				<main>
 					<Skills />
+					<Projects />
 				</main>
 			</div>
 		</div>
