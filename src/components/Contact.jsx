@@ -1,4 +1,4 @@
-import { useContext, useRef } from 'react';
+import { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ThemeAndLangContext from '../context/ThemeAndLangContext.jsx';
 import { BsEnvelope } from 'react-icons/bs';
@@ -10,9 +10,11 @@ import '../css/Contact.css';
 const Contact = () => {
 	const { texts } = useContext(ThemeAndLangContext);
 	const form = useRef();
+	const [sendMessage, setSendMessage] = useState('');
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		setSendMessage('');
 
 		emailjs
 			.sendForm(
@@ -24,14 +26,22 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					setSendMessage(
+						'✈️  Mensaje enviado! Gracias por comunicarte conmigo. 🥳 '
+					);
 				},
 				(error) => {
 					console.log(error.text);
+					setSendMessage('❗ No se envió el mensaje. Vuelve a intentarlo. 💪');
 				}
 			);
 
 		e.target.reset();
 	};
+
+	setTimeout(() => {
+		setSendMessage('');
+	}, 3000);
 
 	return (
 		<section
@@ -39,7 +49,7 @@ const Contact = () => {
 			id='contact'
 		>
 			<div className='container-contacts'>
-				<h3 className='section-tite'>
+				<h3 className='section-title'>
 					<span className='skill-icon-text'>
 						<BsEnvelope />
 						{texts.contact}
@@ -105,6 +115,9 @@ const Contact = () => {
 						>
 							{texts.send}
 						</button>
+						<div className='send-message'>
+							<span>{sendMessage}</span>
+						</div>
 					</form>
 				</div>
 			</div>

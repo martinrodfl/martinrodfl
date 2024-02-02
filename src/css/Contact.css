@@ -129,16 +129,20 @@ form>textarea {
   opacity: .8;
 }
 
+.send-message {
+  display: flex;
+  width: 90%;
+  height: 40px;
+  font-size: 13px;
+  padding: 3px;
+}
 
 @media (width >=1400px) {
   .container-contact-form {
     border-radius: 8px;
-
     display: flex;
     flex-direction: column;
     width: 90%;
-    min-height: 50vh;
-
     gap: 40px;
 
     input {

@@ -17,52 +17,12 @@
   padding: 5px;
 }
 
-/* .project-title {
-  display: flex;
-  width: 100%;
-  height: fit-content;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-} */
-
 .projects-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 50px 10px 10px 10px;
   gap: 30px;
 }
-
-
-/** ---------------MEDIAQUERIES--------------------------------------- */
-/* @media (577px <=width < 768px) {
-  .projects-list {
-    background-color: red;
-  }
-}
-
-@media (768px <=width < 992px) {
-  .projects-list {
-    background-color: green;
-  }
-}
-
-@media (992px <=width < 1200px) {
-  .projects-list {
-    background-color: blue;
-  }
-}
-
-@media (1200px <=width < 1400px) {
-  .projects-list {
-    background-color: violet;
-  }
-}
-
-@media (width >=1400px) {
-  .projects-list {
-    background-color: purple;
-  }
-} */

@@ -13,7 +13,7 @@ const Projects = () => {
 			id='projects'
 		>
 			<div className='container-projects'>
-				<h3 className='section-tite'>
+				<h3 className='section-title'>
 					<span className='skill-icon-text'>
 						<PiDevices />
 						{texts.projects}

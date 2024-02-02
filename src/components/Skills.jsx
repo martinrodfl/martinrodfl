@@ -12,7 +12,7 @@ const Skills = () => {
 			id='skills'
 		>
 			<div className='container-skills-technologies'>
-				<h3 className='section-tite'>
+				<h3 className='section-title'>
 					<span className='skill-icon-text'>
 						<RiCodeSSlashLine />
 						{texts.mySkills}
@@ -33,7 +33,7 @@ const Skills = () => {
 						</div>
 					))}
 				</div>
-				<h3 className='section-tite'>
+				<h3 className='section-title'>
 					<span className='skill-icon-text'>
 						<AiOutlineCode />
 						{texts.myTechs}

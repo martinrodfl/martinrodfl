@@ -40,12 +40,13 @@ main {
   gap: 30px;
 }
 
-.section-tite {
+.section-title {
   display: flex;
   width: 100%;
   height: fit-content;
   justify-content: flex-start;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 /*! -------------------------------DARK-------------------------------------- */
