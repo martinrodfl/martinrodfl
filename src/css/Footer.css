@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 10svh;
+}
+
+footer>span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer>span>a {
+  text-decoration: none;
+}

@@ -17,8 +17,6 @@
 .download-btn {
   padding: 5px 10px;
   margin: 0 auto;
-  border: 1px solid #0ec18580;
-  box-shadow: 5px 5px 0px 1px #0ec185;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
@@ -27,7 +25,6 @@
   justify-content: center;
   gap: 10px;
   font-size: var(--font-size-base);
-  opacity: .8;
 }
 
 .download-icon {
@@ -73,10 +70,23 @@
   display: inline-block;
 }
 
+.text-color {
+  min-height: 60px;
+  font-size: 20px;
+}
+
+.text-color2,
+.Typewriter {
+  min-height: 30px;
+  font-size: var(--font-size-xl);
+}
+
 .text-color,
 .text-color2 {
   font-weight: bold;
   text-align: center;
+  /* font-size: var(--font-size-xl); */
+
 }
 
 .vibrate {
@@ -157,13 +167,19 @@
 @media (577px <=width < 768px) {}
 
 @media (768px <=width < 992px) {
+
+  .tab {
+    font-size: 15px;
+  }
+
   .container-image {
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
   }
 
   .container-image img {
     width: 350px;
+    height: auto;
   }
 }
 
@@ -172,6 +188,10 @@
 @media (1200px <=width < 1400px) {
   .vibrate {
     font-size: 28px;
+  }
+
+  .tab {
+    font-size: 20px;
   }
 }
 

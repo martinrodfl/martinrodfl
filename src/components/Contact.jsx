@@ -51,8 +51,10 @@ const Contact = () => {
 						<h5>Email</h5>
 						<h6>martinrodfl@gmail.com</h6>
 						<a href='mailto:martinrofl@gmail.com'>
-							<BiMailSend />
-							Send a Email
+							<span className='icon-send'>
+								<BiMailSend />
+								{texts.sendEmail}
+							</span>
 						</a>
 					</div>
 					<div className='contact-whatsapp'>
@@ -60,19 +62,20 @@ const Contact = () => {
 						<h5>WhatsApp</h5>
 						<h6>+598 099 029 327</h6>
 						<a href='https://api.whatsapp.com/send?phone=598099029327'>
-							<AiOutlineMessage /> Send a Whatspp
+							<span className='icon-send'>
+								<AiOutlineMessage /> {texts.sendWhatsApp}
+							</span>
 						</a>
 					</div>
 				</div>
 				<div className='container-contact-form'>
-					<h5>Send me a Message</h5>
+					<h5>{texts.sendMessage}</h5>
 					<form
-						action=''
 						ref={form}
 						onSubmit={sendEmail}
 					>
 						<input
-							placeholder='  Your Name'
+							placeholder={texts.yourName}
 							required
 							type='text'
 							name='name'
@@ -80,7 +83,7 @@ const Contact = () => {
 							autoComplete='off'
 						/>
 						<input
-							placeholder='   Your Email'
+							placeholder={texts.yourEmail}
 							required
 							type='email'
 							name='email'
@@ -88,7 +91,7 @@ const Contact = () => {
 							autoComplete='off'
 						/>
 						<textarea
-							placeholder='   Your Mesage'
+							placeholder={texts.yourMessage}
 							required
 							name='message'
 							id='message'
@@ -100,7 +103,7 @@ const Contact = () => {
 							type='submit'
 							className='submit-button'
 						>
-							Send
+							{texts.send}
 						</button>
 					</form>
 				</div>

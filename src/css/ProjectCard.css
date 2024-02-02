@@ -4,7 +4,6 @@
   display: flex;
   width: 90%;
   height: auto;
-
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -56,7 +55,11 @@
   width: 5px;
 }
 
-
+@media (1200px <=width < 1400px) {
+  .card-container {
+    width: 40%;
+  }
+}
 
 @media (width >=1400px) {
   .card-container {

@@ -7,6 +7,7 @@ import { MdKeyboardArrowUp } from 'react-icons/md';
 import './App.css';
 import './css/main.css';
 import Contact from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 function App() {
 	const { theme } = useContext(ThemeAndLangContext);
 
@@ -34,6 +35,7 @@ function App() {
 					<Contact />
 				</main>
 			</div>
+			<Footer />
 		</div>
 	);
 }

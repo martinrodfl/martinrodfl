@@ -13,6 +13,16 @@ export const translations = {
 		myTechs: 'My Technologies',
 		projects: 'My Projects',
 		contact: 'Contact Me',
+
+		sendEmail: 'Send Email',
+		sendWhatsApp: 'Send a WhatsApp',
+		sendMessage: 'Send me a Message',
+		yourName: '  Your Name',
+		yourEmail: '   Your Email',
+		yourMessage: '   Your Mesage',
+		send: 'Send',
+		vistMyLinkedin: 'Visit my Linkedin',
+
 		apps: [
 			{
 				id: 1,
@@ -76,6 +86,16 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 		myTechs: 'Mis Tecnologias',
 		projects: 'Mis Proyectos',
 		contact: 'Contáctame',
+
+		sendEmail: 'Enviar Email',
+		sendWhatsApp: 'Enviar un WhatsApp',
+		sendMessage: 'Envíame un  Message',
+		yourName: '  Tu Nombre',
+		yourEmail: '   Tu Email',
+		yourMessage: '   Tu Mensaje',
+		send: 'Enviar',
+		vistMyLinkedin: 'Visita mi Linkedin',
+
 		apps: [
 			{
 				id: 1,

@@ -8,8 +8,6 @@
 }
 
 .container-contacts {
-  /* border: 1px solid red; */
-
   display: flex;
   width: 100%;
   min-height: 98svh;
@@ -18,9 +16,16 @@
   padding: 5px;
 }
 
+.icon-send {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  gap: 5px;
+}
+
 .container-contact-options {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   height: 30vh;
@@ -47,7 +52,7 @@
 
 .container-contact-form {
   border-radius: 8px;
-
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -96,7 +101,6 @@ form {
 
 form>input {
   height: 30px;
-
 }
 
 form>input,
@@ -106,7 +110,6 @@ form>textarea {
   padding: 5px;
   background-color: transparent;
   border: none;
-  /* border-bottom: 2px solid red; */
 }
 
 .submit-button {
@@ -140,5 +143,26 @@ form>textarea {
     input {
       margin-bottom: 20px;
     }
+  }
+
+  .icon-send {
+    font-size: 25px;
+  }
+
+  form>input {
+    height: 50px;
+  }
+
+  #name,
+  #email {
+    padding: 0 50px;
+    font-size: 20px;
+    background-position: 0px 17px;
+  }
+
+  #message {
+    padding: 0 50px;
+    font-size: 20px;
+    background-position: 0px 2px;
   }
 }
