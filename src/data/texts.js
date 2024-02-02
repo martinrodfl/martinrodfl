@@ -21,7 +21,7 @@ export const translations = {
 		yourEmail: '   Your Email',
 		yourMessage: '   Your Mesage',
 		send: 'Send',
-		vistMyLinkedin: 'Visit my Linkedin',
+		vistMyLinkedin: 'Visit my Linked',
 
 		apps: [
 			{
@@ -94,7 +94,7 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 		yourEmail: '   Tu Email',
 		yourMessage: '   Tu Mensaje',
 		send: 'Enviar',
-		vistMyLinkedin: 'Visita mi Linkedin',
+		vistMyLinkedin: 'Visita mi Linked',
 
 		apps: [
 			{

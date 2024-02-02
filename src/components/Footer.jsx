@@ -10,13 +10,15 @@ const Footer = () => {
 	return (
 		<footer>
 			<span>
-				<FaLinkedin />
 				<a
 					href='http://www.linkedin.com/in/diego-martin-rodriguez'
 					target='_blank'
 					rel='noreferrer'
 				>
 					{texts.vistMyLinkedin}
+					<span>
+						<FaLinkedin /> {'  '}
+					</span>
 				</a>
 				<LuExternalLink />
 			</span>
