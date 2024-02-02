@@ -48,7 +48,7 @@ const Header = () => {
 	const { texts, lang } = useContext(ThemeAndLangContext);
 
 	return (
-		<div className='header'>
+		<header className='header'>
 			<div className='header-switches'>
 				<ThemeSwitch />
 				<Nav />
@@ -99,7 +99,7 @@ const Header = () => {
 					{texts.view} {texts.resume}
 				</span>
 			</a>
-		</div>
+		</header>
 	);
 };
 

@@ -1,21 +1,111 @@
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import ThemeAndLangContext from '../context/ThemeAndLangContext.jsx';
+import { BsEnvelope } from 'react-icons/bs';
+import { FaWhatsapp } from 'react-icons/fa';
+import { BiMailSend } from 'react-icons/bi';
+import { AiOutlineMessage } from 'react-icons/ai';
 import '../css/Contact.css';
 
 const Contact = () => {
 	const { texts } = useContext(ThemeAndLangContext);
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				'service_rsev4m8',
+				'template_ql7d8oo',
+				form.current,
+				'lPV_OOJWE5ktont1J'
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+
+		e.target.reset();
+	};
 
 	return (
-		<div
+		<section
 			className='contact'
 			id='contact'
 		>
 			<div className='container-contacts'>
-				<h3 className='contact-title'>
-					<span className='skill-icon-text'>{texts.contact}</span>
+				<h3 className='section-tite'>
+					<span className='skill-icon-text'>
+						<BsEnvelope />
+						{texts.contact}
+					</span>
 				</h3>
+				<div className='container-contact-options'>
+					<div className='contact-email'>
+						<BsEnvelope size={30} />
+						<h5>Email</h5>
+						<h6>martinrodfl@gmail.com</h6>
+						<a href='mailto:martinrofl@gmail.com'>
+							<BiMailSend />
+							Send a Email
+						</a>
+					</div>
+					<div className='contact-whatsapp'>
+						<FaWhatsapp size={30} />
+						<h5>WhatsApp</h5>
+						<h6>+598 099 029 327</h6>
+						<a href='https://api.whatsapp.com/send?phone=598099029327'>
+							<AiOutlineMessage /> Send a Whatspp
+						</a>
+					</div>
+				</div>
+				<div className='container-contact-form'>
+					<h5>Send me a Message</h5>
+					<form
+						action=''
+						ref={form}
+						onSubmit={sendEmail}
+					>
+						<input
+							placeholder='  Your Name'
+							required
+							type='text'
+							name='name'
+							id='name'
+							autoComplete='off'
+						/>
+						<input
+							placeholder='   Your Email'
+							required
+							type='email'
+							name='email'
+							id='email'
+							autoComplete='off'
+						/>
+						<textarea
+							placeholder='   Your Mesage'
+							required
+							name='message'
+							id='message'
+							cols='30'
+							rows='8'
+							autoComplete='off'
+						></textarea>
+						<button
+							type='submit'
+							className='submit-button'
+						>
+							Send
+						</button>
+					</form>
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

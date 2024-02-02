@@ -7,12 +7,12 @@ import '../css/Skills.css';
 const Skills = () => {
 	const { theme, texts } = useContext(ThemeAndLangContext);
 	return (
-		<div
+		<section
 			className='skills'
 			id='skills'
 		>
 			<div className='container-skills-technologies'>
-				<h3>
+				<h3 className='section-tite'>
 					<span className='skill-icon-text'>
 						<RiCodeSSlashLine />
 						{texts.mySkills}
@@ -33,7 +33,7 @@ const Skills = () => {
 						</div>
 					))}
 				</div>
-				<h3>
+				<h3 className='section-tite'>
 					<span className='skill-icon-text'>
 						<AiOutlineCode />
 						{texts.myTechs}
@@ -55,7 +55,7 @@ const Skills = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
