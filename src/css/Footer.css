@@ -9,17 +9,15 @@ footer {
 footer>span {
   display: flex;
   align-items: center;
-  /* gap: 5px; */
-  /* margin-left: 5px; */
 }
 
 footer>span>a {
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  text-decoration: none;
 }
 
-footer>span>a {
-  text-decoration: none;
-  margin-right: 5px;
+footer>span>span {
+  margin-left: 5px;
+  display: flex;
 }

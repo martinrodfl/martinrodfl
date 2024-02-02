@@ -16,11 +16,13 @@ const Footer = () => {
 					rel='noreferrer'
 				>
 					{texts.vistMyLinkedin}
-					<span>
-						<FaLinkedin /> {'  '}
-					</span>
+
+					<FaLinkedin />
 				</a>
-				<LuExternalLink />
+
+				<span>
+					<LuExternalLink />
+				</span>
 			</span>
 		</footer>
 	);
