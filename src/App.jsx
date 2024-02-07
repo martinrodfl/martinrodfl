@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import Header from './components/Header.jsx';
 import ThemeAndLangContext from './context/ThemeAndLangContext.jsx';
 import Skills from './components/Skills.jsx';
@@ -10,6 +10,28 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 function App() {
 	const { theme } = useContext(ThemeAndLangContext);
+	const observer = useRef(null);
+	useEffect(() => {
+		observer.current = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('show');
+				} else {
+					entry.target.classList.remove('show');
+				}
+			});
+		});
+
+		const hiddenElements = document.querySelectorAll('.hidden, .hiddenR');
+		hiddenElements.forEach((el) => observer.current.observe(el));
+
+		return () => {
+			hiddenElements.forEach((el) => observer.current.unobserve(el));
+		};
+	}, []);
+
+	const hiddenElements = document.querySelectorAll('.hidden, .hiddenR');
+	hiddenElements.forEach((el) => observer.current.observe(el));
 
 	return (
 		<div
@@ -20,7 +42,7 @@ function App() {
 				className='toTop'
 				href='#top'
 			>
-				<span>
+				<span className='arrowTop'>
 					<MdKeyboardArrowUp />
 				</span>
 			</a>

@@ -21,7 +21,7 @@ const Skills = () => {
 				<div className='my-skills'>
 					{skills.map((item) => (
 						<div
-							className='skill'
+							className='skill hidden'
 							key={item?.id}
 						>
 							<img
@@ -42,7 +42,7 @@ const Skills = () => {
 				<div className='my-technolgies'>
 					{tech.map((item) => (
 						<div
-							className='tech'
+							className='tech hidden'
 							key={item?.id}
 						>
 							<img

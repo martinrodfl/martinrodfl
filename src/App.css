@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -13,9 +14,8 @@
   height: 25px;
   z-index: 1000;
   position: fixed;
-  background-color: #0ec18548;
-  border: 1px solid #0ec185;
-  bottom: 25px;
+  background-color: #0ec185;
+  bottom: 35px;
   right: 30px;
   border-radius: 50%;
   display: flex;
@@ -23,7 +23,15 @@
   align-items: center;
 }
 
+.arrowTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
 .layout {
+  transition: background-color 2.5s ease;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -47,6 +55,32 @@ main {
   justify-content: flex-start;
   margin-bottom: 10px;
   margin-left: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.hiddenR {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateX(100%);
+  transition: all 1.3s;
+}
+
+@media(prefers-reduce-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 /*! -------------------------------DARK-------------------------------------- */
@@ -78,9 +112,8 @@ main {
     color: aliceblue;
     border: 1px solid #0ec18580;
     box-shadow: 3px 3px 0px 1px #0ec185;
+    background-color: rgba(0, 0, 0, 0.322);
   }
-
-
 
   .download-btn:visited {
     color: aliceblue;
@@ -89,6 +122,7 @@ main {
   .download-btn:hover {
     background-color: #0ec185;
     color: black;
+    box-shadow: none;
   }
 
   .container-image>img {
@@ -109,7 +143,7 @@ main {
   }
 
   .toTop {
-    color: aliceblue;
+    color: rgb(2, 2, 2);
   }
 
   .toTop:visited {
@@ -127,18 +161,25 @@ main {
     box-shadow: 3px 3px 0px 1px #0ec185;
   }
 
-
   .repo-links-a {
-    color: rgba(240, 248, 255, 0.4);
+    color: rgba(240, 248, 255, 0.9);
   }
 
+
   .repo-links-a:visited {
-    color: rgba(240, 248, 255, 0.4);
+    color: rgba(240, 248, 255, 0.9);
+  }
+
+  .repo-links-a:hover {
+    background-color: #0ec185;
+    color: black;
+    border-radius: 4px;
   }
 
   .submit-button {
     color: aliceblue;
     box-shadow: 3px 3px 0px 1px #0ec185;
+    background-color: rgba(0, 0, 0, 0.322);
   }
 
   .contact-email,
@@ -152,9 +193,49 @@ main {
     color: aliceblue;
   }
 
+  .contact-email>a:hover,
+  .contact-whatsapp>a:hover {
+    background-color: #0ec185;
+    color: black;
+    border-radius: 4px;
+  }
+
+  .submit-button:hover {
+    background-color: #0ec185;
+    color: black;
+    box-shadow: none;
+  }
+
   .container-contact-form {
     border: 1px solid #0ec185;
     box-shadow: 3px 3px 0px 1px #0ec185;
+  }
+
+  #name {
+    background-size: 25px;
+    background-image: url('../src/assets/pen.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding-left: 25px;
+  }
+
+  #email {
+    background-size: 23px;
+    background-image: url('../src/assets/arroba.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding-left: 25px;
+  }
+
+  #message {
+    background-size: 23px;
+    background-image: url('../src/assets/message.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding-left: 25px;
   }
 
   form>input,
@@ -196,6 +277,7 @@ main {
 
   .download-btn {
     color: rgb(3, 3, 3);
+    background-color: rgba(240, 248, 255, 0.425);
     border: 1px solid #0ec18580;
     box-shadow: 3px 3px 0px 1px #0ec185;
   }
@@ -206,6 +288,7 @@ main {
 
   .download-btn:hover {
     background-color: #0ec185;
+    box-shadow: none;
 
   }
 
@@ -218,6 +301,11 @@ main {
   }
 
   .tab:visited {
+    color: black;
+  }
+
+  .tab:hover {
+    background-color: #0ec185;
     color: black;
   }
 
@@ -235,22 +323,30 @@ main {
     box-shadow: 3px 3px 0px 1px #0ec185;
   }
 
+
   .card-container {
     border: 1px solid #0ec185;
     box-shadow: 3px 3px 0px 1px #0ec185;
   }
 
   .repo-links-a {
-    color: rgba(0, 0, 0, 0.486);
+    color: rgba(0, 0, 0, 1);
   }
 
   .repo-links-a:visited {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .repo-links-a:hover {
+    background-color: #0ec185;
+    color: black;
+    border-radius: 4px;
   }
 
   .submit-button {
     color: black;
     box-shadow: 3px 3px 0px 1px #0ec185;
+    background-color: rgba(240, 248, 255, 0.425);
   }
 
   .contact-email,
@@ -264,16 +360,48 @@ main {
     color: black;
   }
 
+  .contact-email>a:hover,
+  .contact-whatsapp>a:hover {
+    background-color: #0ec185;
+    border-radius: 4px;
+  }
+
+  .submit-button:hover {
+    background-color: #0ec185;
+    color: black;
+    box-shadow: none;
+  }
+
   .container-contact-form {
     border: 1px solid #0ec185;
     box-shadow: 3px 3px 0px 1px #0ec185;
   }
 
-  #name,
-  #email,
-  #message {
+  #name {
+    background-size: 25px;
+    background-image: url('../src/assets/arrobaB.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
     color: black;
-    font-size: 13px;
+    padding-left: 25px;
+  }
+
+  #email {
+    background-size: 23px;
+    background-image: url('../src/assets/arrobaB.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    color: black;
+    padding-left: 25px;
+  }
+
+  #message {
+    background-size: 23px;
+    background-image: url('../src/assets/messageB.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    color: black;
+    padding-left: 25px;
   }
 
   form>input,
@@ -315,11 +443,23 @@ main {
   .layout {
     width: 80vw;
   }
+
+  .toTop {
+    right: 2.5%;
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media (1200px <=width < 1400px) {
   .layout {
     width: 70vw;
+  }
+
+  .toTop {
+    right: 2.5%;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -348,7 +488,16 @@ main {
       color: aliceblue;
     }
 
+    #name,
+    #email {
+      font-size: 18px;
+      background-position: 0px 15px;
+    }
 
+    #message {
+      font-size: 18px;
+      background-position: 0px 5px;
+    }
 
   }
 
@@ -367,12 +516,23 @@ main {
     .toTop {
       right: 20vw;
       width: 45px;
-      height: 30px;
+      height: 45px;
       color: black;
     }
 
     .toTop:visited {
       color: black;
+    }
+
+    #name,
+    #email {
+      font-size: 18px;
+      background-position: 0px 15px;
+    }
+
+    #message {
+      font-size: 18px;
+      background-position: 0px 5px;
     }
   }
 

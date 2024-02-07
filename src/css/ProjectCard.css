@@ -2,7 +2,7 @@
   border: 1px solid black;
   border-radius: 8px;
   display: flex;
-  width: 90%;
+  width: 95%;
   height: auto;
   flex-wrap: wrap;
   gap: 20px;
@@ -48,11 +48,24 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
+  padding: 5px 5px;
 }
 
 .repos-link-separator {
   width: 5px;
+}
+
+/** ---------------MEDIAQUERIES--------------------------------------- */
+@media (768px <=width < 992px) {
+  .card-container {
+    width: 40%;
+  }
+}
+
+@media (992px <=width < 1200px) {
+  .card-container {
+    width: 40%;
+  }
 }
 
 @media (1200px <=width < 1400px) {

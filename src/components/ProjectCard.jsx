@@ -11,12 +11,12 @@ const ProjectCard = ({
 	githubUrl,
 }) => {
 	return (
-		<div className='card-container'>
+		<div className='card-container hiddenR'>
 			<img
 				src={imgUrl}
 				alt={'Image from app ' + name}
 			/>
-			<div className='card-body'>
+			<div className='card-body '>
 				<h3 className='card-app-title'>{name}</h3>
 				<h6>{description}</h6>
 

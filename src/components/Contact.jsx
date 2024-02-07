@@ -56,29 +56,30 @@ const Contact = () => {
 					</span>
 				</h3>
 				<div className='container-contact-options'>
-					<div className='contact-email'>
+					<div className='contact-email hidden'>
 						<BsEnvelope size={30} />
 						<h5>Email</h5>
 						<h6>martinrodfl@gmail.com</h6>
 						<a href='mailto:martinrofl@gmail.com'>
 							<span className='icon-send'>
 								<BiMailSend />
-								{texts.sendEmail}
 							</span>
+							<span>{texts.sendEmail}</span>
 						</a>
 					</div>
-					<div className='contact-whatsapp'>
+					<div className='contact-whatsapp hidden'>
 						<FaWhatsapp size={30} />
 						<h5>WhatsApp</h5>
 						<h6>+598 099 029 327</h6>
 						<a href='https://api.whatsapp.com/send?phone=598099029327'>
 							<span className='icon-send'>
-								<AiOutlineMessage /> {texts.sendWhatsApp}
+								<AiOutlineMessage />
 							</span>
+							<span>{texts.sendWhatsApp}</span>
 						</a>
 					</div>
 				</div>
-				<div className='container-contact-form'>
+				<div className='container-contact-form hidden'>
 					<h5>{texts.sendMessage}</h5>
 					<form
 						ref={form}

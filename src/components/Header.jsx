@@ -4,9 +4,9 @@ import { LangSwitch } from './LangSwitch.jsx';
 import { ThemeSwitch } from './ThemeSwitch.jsx';
 import Typewriter from 'typewriter-effect';
 import { IoEyeOutline } from 'react-icons/io5';
-import { AiOutlineCode } from 'react-icons/ai';
 import { RiCodeSSlashLine } from 'react-icons/ri';
 import { MdOutlineEmail } from 'react-icons/md';
+import { PiDevices } from 'react-icons/pi';
 import man from '../assets/man.png';
 import '../css/Header.css';
 
@@ -28,7 +28,7 @@ const Nav = () => {
 				href='#projects'
 			>
 				<span className='skill-icon-text'>
-					<AiOutlineCode />
+					<PiDevices />
 					{texts.projects}
 				</span>
 			</a>
@@ -76,6 +76,7 @@ const Header = () => {
 				<div className='header-image'>
 					<div className='container-image'>
 						<img
+							className='wobble-vertical'
 							src={man}
 							alt='photo'
 						/>

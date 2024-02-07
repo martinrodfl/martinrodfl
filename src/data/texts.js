@@ -20,7 +20,7 @@ export const translations = {
 		yourName: '  Your Name',
 		yourEmail: '   Your Email',
 		yourMessage: '   Your Mesage',
-		send: 'Send',
+		send: 'Send Message',
 		vistMyLinkedin: 'Visit my Linked',
 
 		apps: [
@@ -89,11 +89,11 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 
 		sendEmail: 'Enviar Email',
 		sendWhatsApp: 'Enviar un WhatsApp',
-		sendMessage: 'Envíame un  Message',
+		sendMessage: 'Envíame un Mensaje',
 		yourName: '  Tu Nombre',
 		yourEmail: '   Tu Email',
 		yourMessage: '   Tu Mensaje',
-		send: 'Enviar',
+		send: 'Enviar Mensaje',
 		vistMyLinkedin: 'Visita mi Linked',
 
 		apps: [
