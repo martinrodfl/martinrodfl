@@ -26,9 +26,7 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					setSendMessage(
-						'✈️  Mensaje enviado! Gracias por comunicarte conmigo. 🥳 '
-					);
+					setSendMessage('✈️  Mensaje enviado! Gracias por comunicarte. 🥳 ');
 				},
 				(error) => {
 					console.log(error.text);
@@ -56,7 +54,7 @@ const Contact = () => {
 					</span>
 				</h3>
 				<div className='container-contact-options'>
-					<div className='contact-email hidden'>
+					<div className='contact-email'>
 						<BsEnvelope size={30} />
 						<h5>Email</h5>
 						<h6>martinrodfl@gmail.com</h6>
@@ -67,7 +65,7 @@ const Contact = () => {
 							<span>{texts.sendEmail}</span>
 						</a>
 					</div>
-					<div className='contact-whatsapp hidden'>
+					<div className='contact-whatsapp'>
 						<FaWhatsapp size={30} />
 						<h5>WhatsApp</h5>
 						<h6>+598 099 029 327</h6>
@@ -79,7 +77,7 @@ const Contact = () => {
 						</a>
 					</div>
 				</div>
-				<div className='container-contact-form hidden'>
+				<div className='container-contact-form'>
 					<h5>{texts.sendMessage}</h5>
 					<form
 						ref={form}

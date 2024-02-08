@@ -76,35 +76,13 @@ form {
   gap: 20px;
 }
 
-/* #name {
-  background-size: 25px;
-  background-image: url('../assets/pen.png');
-  background-position: 0px 2px;
-  background-repeat: no-repeat;
-  color: aliceblue;
-  padding-left: 25px;
-}
-
-#email {
-  background-size: 23px;
-  background-image: url('../assets/arroba.png');
-  background-position: 0px 2px;
-  background-repeat: no-repeat;
-  color: aliceblue;
-  padding-left: 25px;
-}
-
-#message {
-  background-size: 23px;
-  background-image: url('../assets/message.png');
-  background-position: 0px 2px;
-  background-repeat: no-repeat;
-  color: aliceblue;
-  padding-left: 25px;
-} */
-
 form>input {
   height: 30px;
+  font-size: 15px;
+}
+
+form>textarea {
+  font-size: 15px;
 }
 
 form>input,
