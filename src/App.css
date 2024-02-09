@@ -37,12 +37,13 @@
   flex-direction: column;
   width: 100vw;
   min-height: 100svh;
-  min-width: 360px;
+  min-width: 375px;
   font-size: var(--font-size-base);
   gap: 20px;
 }
 
 main {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -50,7 +51,7 @@ main {
 
 .section-title {
   display: flex;
-  width: 100%;
+  width: 80%;
   height: fit-content;
   justify-content: flex-start;
   margin-bottom: 10px;
@@ -85,7 +86,7 @@ main {
 
 /*! -------------------------------DARK-------------------------------------- */
 .dark {
-  min-width: 360px;
+  min-width: 375px;
   background-image: url('./assets/noise-transparent.png');
   background-color: rgba(0, 0, 0, 0.98);
   color: rgba(240, 248, 255, 0.8);

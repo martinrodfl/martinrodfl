@@ -25,6 +25,7 @@
   justify-content: center;
   gap: 10px;
   font-size: var(--font-size-base);
+  margin-bottom: 40px;
 }
 
 .download-icon {
@@ -137,7 +138,6 @@
 .container-image img {
   width: 200px;
   height: auto;
-  /* filter: drop-shadow(10px 40px 15px rgba(0, 0, 0, 0.603)); */
 }
 
 

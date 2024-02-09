@@ -22,6 +22,7 @@ export const translations = {
 		yourMessage: '   Your Mesage',
 		send: 'Send Message',
 		vistMyLinkedin: 'Visit my Linked',
+		construction: 'Website under construction',
 
 		apps: [
 			{
@@ -42,36 +43,6 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 				details: `Javascript One-Liners is inspired on a FreeCodeCamp article, and in this web I try to apply the concepts explained in it. It is built only with Html, Css and JavaScript, without frameworks. It is responsive and has light/dark mode`,
 				deployUrl: 'https://java-script-one-liners.vercel.app/',
 				githubUrl: 'https://github.com/martinrodfl/JavaScript-One-Liners.git',
-			},
-			{
-				id: 3,
-				imgUrl: '../assets/simple-tasks.png',
-				name: 'Simple Tasks',
-				description: 'App de tareas del tipo TodoApp ',
-				details: `Esta realizada en React con Vite.
-			Permite agregar tareas, editarlas, eliminarlas, marcarlas como completadas y tambien posicionarlas en cualquier orden mediante "drag and drop".
-			Para tener persistencia las tareas se guardan en localStorage.
-			Responsiva para casi todos los tamaños de pantallas de telefonos moviles.
-			Algunos iconos animados.
-			Se hizo la aplicacion PWA.
-			App Español-Ingles`,
-				deployUrl: 'https://tareas-simples.vercel.app/',
-				githubUrl: 'https://github.com/martinrodfl/Tareas.git',
-			},
-			{
-				id: 4,
-				imgUrl: '../assets/simple-tasks.png',
-				name: 'Simple Tasks',
-				description: 'App de tareas del tipo TodoApp ',
-				details: `Esta realizada en React con Vite.
-			Permite agregar tareas, editarlas, eliminarlas, marcarlas como completadas y tambien posicionarlas en cualquier orden mediante "drag and drop".
-			Para tener persistencia las tareas se guardan en localStorage.
-			Responsiva para casi todos los tamaños de pantallas de telefonos moviles.
-			Algunos iconos animados.
-			Se hizo la aplicacion PWA.
-			App Español-Ingles`,
-				deployUrl: 'https://tareas-simples.vercel.app/',
-				githubUrl: 'https://github.com/martinrodfl/Tareas.git',
 			},
 		],
 	},
@@ -95,6 +66,7 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 		yourMessage: '   Tu Mensaje',
 		send: 'Enviar Mensaje',
 		vistMyLinkedin: 'Visita mi Linked',
+		construction: 'Web en construcción',
 
 		apps: [
 			{
@@ -114,36 +86,6 @@ It allows you to add tasks, edit them, delete them, mark them as completed and a
 			},
 			{
 				id: 2,
-				imgUrl: '../assets/simple-tasks.png',
-				name: 'Simple Tasks',
-				description: 'App de tareas del tipo TodoApp ',
-				details: `Esta realizada en React con Vite.
-			Permite agregar tareas, editarlas, eliminarlas, marcarlas como completadas y tambien posicionarlas en cualquier orden mediante "drag and drop".
-			Para tener persistencia las tareas se guardan en localStorage.
-			Responsiva para casi todos los tamaños de pantallas de telefonos moviles.
-			Algunos iconos animados.
-			Se hizo la aplicacion PWA.
-			App Español-Ingles`,
-				deployUrl: 'https://tareas-simples.vercel.app/',
-				githubUrl: 'https://github.com/martinrodfl/Tareas.git',
-			},
-			{
-				id: 3,
-				imgUrl: '../assets/simple-tasks.png',
-				name: 'Simple Tasks',
-				description: 'App de tareas del tipo TodoApp ',
-				details: `Esta realizada en React con Vite.
-			Permite agregar tareas, editarlas, eliminarlas, marcarlas como completadas y tambien posicionarlas en cualquier orden mediante "drag and drop".
-			Para tener persistencia las tareas se guardan en localStorage.
-			Responsiva para casi todos los tamaños de pantallas de telefonos moviles.
-			Algunos iconos animados.
-			Se hizo la aplicacion PWA.
-			App Español-Ingles`,
-				deployUrl: 'https://tareas-simples.vercel.app/',
-				githubUrl: 'https://github.com/martinrodfl/Tareas.git',
-			},
-			{
-				id: 4,
 				imgUrl: '../assets/simple-tasks.png',
 				name: 'Simple Tasks',
 				description: 'App de tareas del tipo TodoApp ',
