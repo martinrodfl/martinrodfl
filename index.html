@@ -2,6 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="theme-color"
+			content="#FF0000"
+		/>
 		<link
 			rel="icon"
 			type="image/svg+xml"
@@ -15,11 +19,26 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<style>
+			/* Estilo predeterminado para la barra de navegación */
+			meta[name='theme-color'] {
+				content: #ffffff; /* Blanco predeterminado para el tema claro */
+			}
+		</style>
 		<title>Martin Rodriguez</title>
-		<script type="module" crossorigin src="https://martinrodfl.github.io/martinrodfl/assets/index-h50icz0t.js"></script>
-		<link rel="stylesheet" crossorigin href="https://martinrodfl.github.io/martinrodfl/assets/index-StVzambw.css">
+		<script type="module" crossorigin src="https://martinrodfl.github.io/martinrodfl/assets/index-ASBNvd09.js"></script>
+		<link rel="stylesheet" crossorigin href="https://martinrodfl.github.io/martinrodfl/assets/index-YpeZo8Iu.css">
 	</head>
 	<body>
 		<div id="root"></div>
+		<script>
+			// Detectar si el tema del sistema es claro u oscuro
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				// Cambiar el color de la barra de navegación si el tema es oscuro
+				document
+					.querySelector('meta[name="theme-color"]')
+					.setAttribute('content', '#000000'); // Color negro para tema oscuro
+			}
+		</script>
 	</body>
 </html>
