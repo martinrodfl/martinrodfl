@@ -5,6 +5,7 @@
   height: 100svh;
   min-height: 100svh;
   padding: clamp(5px, 10px, 20px);
+  /* background-image: url('../assets/port_imgs/prog_noche_final.png'); */
 }
 
 .header-switches {
@@ -86,8 +87,6 @@
 .text-color2 {
   font-weight: bold;
   text-align: center;
-  /* font-size: var(--font-size-xl); */
-
 }
 
 .vibrate {
@@ -129,14 +128,14 @@
 }
 
 .container-image {
-  width: 200px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
 
 .container-image img {
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 
@@ -177,8 +176,8 @@
   }
 
   .container-image {
-    width: 350px;
-    height: 450px;
+    width: 100%;
+    height: auto;
   }
 
   .container-image img {
@@ -201,6 +200,10 @@
 
 @media (width >=1400px) {
 
+  .header {
+    margin-top: 20px;
+  }
+
   .vibrate {
     font-size: 36px;
   }
@@ -210,11 +213,12 @@
   }
 
   .container-image {
-    width: 300px;
-    height: 400px;
+    width: 70%;
+    height: auto;
   }
 
   .container-image img {
-    width: 300px;
+    width: 70%;
+    height: auto;
   }
 }

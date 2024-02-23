@@ -7,7 +7,9 @@ import { IoEyeOutline } from 'react-icons/io5';
 import { RiCodeSSlashLine } from 'react-icons/ri';
 import { MdOutlineEmail } from 'react-icons/md';
 import { PiDevices } from 'react-icons/pi';
-import man from '../assets/man.png';
+// import man from '../assets/man.png';
+// import progNightWide from '../assets/port_imgs/prog_noche_final_ancha.jpeg';
+// import progNight from '../assets/port_imgs/prog_noche_final.png';
 import '../css/Header.css';
 
 const Nav = () => {
@@ -44,6 +46,7 @@ const Nav = () => {
 		</div>
 	);
 };
+
 const Header = () => {
 	const { texts, lang } = useContext(ThemeAndLangContext);
 
@@ -60,7 +63,6 @@ const Header = () => {
 					<span className='hello'>
 						{texts.hello}
 						<span className='vibrate'>👋</span>
-						{texts.colon}
 					</span>
 					<h1 className='text-color'>{texts.name}</h1>
 					<span>
@@ -75,11 +77,18 @@ const Header = () => {
 				</div>
 				<div className='header-image'>
 					<div className='container-image'>
-						<img
-							className='wobble-vertical'
-							src={man}
+						{/* <img
+							className=''
+							src={progNightWide}
 							alt='photo'
-						/>
+						/> */}
+						{/* <img
+							srcSet={`${progNight} ${progNightWide}`}
+							sizes='(min-width: 575px) 575px,
+            800px'
+							src={progNight}
+							alt='image'
+						/> */}
 					</div>
 				</div>
 			</div>

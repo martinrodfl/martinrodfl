@@ -22,13 +22,14 @@ const Projects = () => {
 				<div className='projects-list'>
 					{texts.apps.map((item) => (
 						<ProjectCard
-							key={item.id}
-							imgUrl={item.imgUrl}
-							name={item.name}
-							description={item.description}
-							details={item.details}
-							deployUrl={item.deployUrl}
-							githubUrl={item.githubUrl}
+							key={item?.id}
+							imgUrl={item?.imgUrl}
+							name={item?.name}
+							description={item?.description}
+							details={item?.details}
+							deployUrl={item?.deployUrl}
+							githubUrl={item?.githubUrl}
+							techUsedIcons={item?.techUsedIcons}
 						/>
 					))}
 				</div>

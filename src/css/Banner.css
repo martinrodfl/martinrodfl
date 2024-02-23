@@ -1,0 +1,25 @@
+.banner-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f56a1a;
+  padding: 10px 20px;
+  z-index: 100;
+  text-align: center;
+}
+
+.cerrar-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.banner-contenedor.cerrado {
+  display: none;
+}
+
+#cerrar:checked {
+  display: none;
+}

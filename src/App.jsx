@@ -8,6 +8,8 @@ import './App.css';
 import './css/main.css';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import { Banner } from './components/Banner.jsx';
+
 function App() {
 	const { theme } = useContext(ThemeAndLangContext);
 	const observer = useRef(null);
@@ -34,10 +36,8 @@ function App() {
 	hiddenElements.forEach((el) => observer.current.observe(el));
 
 	return (
-		<div
-			className={theme}
-			id='top'
-		>
+		<div className={theme}>
+			<div id='top'></div>
 			<a
 				className='toTop'
 				href='#top'
@@ -46,18 +46,20 @@ function App() {
 					<MdKeyboardArrowUp />
 				</span>
 			</a>
+			<Banner />
 			<div
 				className='layout'
 				id='layout'
 			>
+				{/* <div className='banner-construction'>{texts.construction}</div> */}
 				<Header />
 				<main>
 					<Skills />
 					<Projects />
 					<Contact />
 				</main>
+				<Footer />
 			</div>
-			<Footer />
 		</div>
 	);
 }

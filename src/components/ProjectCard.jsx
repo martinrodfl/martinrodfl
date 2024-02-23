@@ -1,5 +1,7 @@
 import { IoIosLink } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
+import { useContext } from 'react';
+import ThemeAndLangContext from '../context/ThemeAndLangContext.jsx';
 import '../css/ProjectCard.css';
 
 const ProjectCard = ({
@@ -9,7 +11,10 @@ const ProjectCard = ({
 	details,
 	deployUrl,
 	githubUrl,
+	techUsedIcons,
 }) => {
+	const { texts } = useContext(ThemeAndLangContext);
+
 	return (
 		<div className='card-container hiddenR'>
 			<img
@@ -18,10 +23,28 @@ const ProjectCard = ({
 			/>
 			<div className='card-body '>
 				<h3 className='card-app-title'>{name}</h3>
-				<h6>{description}</h6>
+				<h6 className='card-app-description'>{description}</h6>
 
-				<h6>Details</h6>
+				<h6>{texts.details}</h6>
 				<p>{details}</p>
+
+				<div className='tech-used'>
+					<span className='tech-text'>{texts.techUsed}</span>
+					<div className='tech-icons-used'>
+						{techUsedIcons.map((item) => (
+							<span
+								className='icon-techs'
+								key={item.id}
+							>
+								<img
+									className='icon-image'
+									src={item.img}
+									alt={item.name}
+								/>
+							</span>
+						))}
+					</div>
+				</div>
 
 				<div className='repo-links'>
 					<span>
@@ -33,7 +56,7 @@ const ProjectCard = ({
 						>
 							<IoIosLink />
 							<span className='repos-link-separator'></span>
-							Ir a deploy
+							{texts.gotoDeploy}
 						</a>
 					</span>
 					<span>

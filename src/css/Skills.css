@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 99svh;
+  min-height: 660px;
+  /* margin-bottom: 90px; */
 }
 
 .container-skills-technologies {
@@ -13,7 +14,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 5px;
-  min-height: 90vh;
+  min-height: 660px;
   gap: 40px;
 
 }
@@ -51,9 +52,10 @@
   align-items: center;
   width: 80px;
   height: 80px;
+  border-radius: 8px;
 }
 
-.skill,
+/* .skill,
 .tech:nth-child(odd) {
   transition-delay: 200ms;
 }
@@ -61,10 +63,6 @@
 .skill,
 .tech:nth-child(even) {
   transition-delay: 300ms;
-}
-
-/* .skill:nth-child(4) {
-  transition-delay: 400ms;
 } */
 
 .skill>span,
@@ -127,13 +125,16 @@
 
 @media (width >=1400px) {
 
+  .skills {
+    margin-bottom: 90px;
+  }
+
   .my-skills,
   .my-technolgies {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 30px;
     gap: 3rem;
-    /* gap: 3rem; */
   }
 
   .skill,

@@ -3,9 +3,12 @@ import ThemeAndLangContext from '../context/ThemeAndLangContext.jsx';
 import { skills, tech } from '../data/skills-tech.js';
 import { AiOutlineCode } from 'react-icons/ai';
 import { RiCodeSSlashLine } from 'react-icons/ri';
+import { Scroller } from './Scroller.jsx';
 import '../css/Skills.css';
+
 const Skills = () => {
 	const { theme, texts } = useContext(ThemeAndLangContext);
+	// console.log({ skills });
 	return (
 		<section
 			className='skills'
@@ -18,42 +21,24 @@ const Skills = () => {
 						{texts.mySkills}
 					</span>
 				</h3>
-				<div className='my-skills'>
-					{skills.map((item) => (
-						<div
-							className='skill hidden'
-							key={item?.id}
-						>
-							<img
-								className='skills-tech-img'
-								src={theme === 'light' ? item?.url : item.urlDark}
-								alt={item?.nombre}
-							/>
-							<span>{item.nombre}</span>
-						</div>
-					))}
-				</div>
+				<Scroller
+					arr={skills}
+					theme={theme}
+					direction='left'
+					speed='fast'
+				/>
 				<h3 className='section-title'>
 					<span className='skill-icon-text'>
 						<AiOutlineCode />
 						{texts.myTechs}
 					</span>
 				</h3>
-				<div className='my-technolgies'>
-					{tech.map((item) => (
-						<div
-							className='tech hidden'
-							key={item?.id}
-						>
-							<img
-								className='skills-tech-img'
-								src={theme === 'light' ? item?.url : item.urlDark}
-								alt={item?.nombre}
-							/>
-							<span>{item.nombre}</span>
-						</div>
-					))}
-				</div>
+				<Scroller
+					arr={tech}
+					theme={theme}
+					direction='right'
+					speed='fast'
+				/>
 			</div>
 		</section>
 	);

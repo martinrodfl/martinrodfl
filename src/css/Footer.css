@@ -3,7 +3,8 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 20svh;
+  height: 120px;
+  font-size: clamp(16px, 6em, 12px);
 }
 
 footer>span {
